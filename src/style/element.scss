@@ -1,0 +1,130 @@
+@import "../style/theme.scss";
+
+.el-table td,
+.el-table th {
+  padding: 5px 0;
+  text-align: center;
+}
+
+.el-table th {
+  color: #292929;
+  background: #f6f8fa;
+  border-right: 0;
+}
+
+.el-table th > .cell {
+  font-weight: bold;
+}
+
+.el-table td {
+  border-right: 0;
+}
+
+.el-pagination {
+  padding: 2px 0;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: $menuActiveBorderColor;
+}
+
+.el-table .content-thead {
+  background: #f6f8fa;
+}
+
+.el-button {
+  border: 1px solid #979797;
+  padding: 7px 13px;
+}
+
+.el-button--primary {
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+
+  &:hover {
+    background: $primaryColorLight;
+  }
+}
+
+.el-popover {
+  min-width: 100px;
+}
+
+.avatar-uploader {
+  .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+
+    &:hover {
+      border-color: #409eff;
+    }
+  }
+}
+
+.input-icon {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: $primaryColor;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+}
+
+.el-button:focus,
+.el-button:hover {
+  color: unset;
+  border-color: transparent;
+  background-color: unset;
+}
+
+.mine .el-date-editor .el-input__inner {
+  border-radius: 0;
+}
+
+// tab切换
+.el-tabs--card > .el-tabs__header,
+.el-tabs--card > .el-tabs__header .el-tabs__item,
+.el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border: none;
+}
+
+.el-tabs__item.is-active,
+.el-tabs__item:hover {
+  color: $primaryColor;
+}
+
+.el-tabs__item {
+  padding: 0;
+  margin-right: 34px;
+}
+
+.el-tabs--top.el-tabs--card > .el-tabs__header .el-tabs__item:nth-child(2) {
+  padding-left: 0;
+}
+
+.el-message-box__btns .el-button--primary:hover,
+.el-message-box__btns .el-button--primary:focus {
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+  color: #fff;
+}
+
+.el-dialog__header {
+  border-bottom: 1px solid #ececec;
+}
+
+.el-dialog__footer {
+  border-top: 1px solid #ececec;
+}
